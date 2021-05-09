@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    position: relative;
+}
+
+html{
+   scroll-behavior:smooth;
+   transition: all 0.5s;
+}
+
+::selection{
+    background-color: #ff4500;
+    color: #fff;
+}
+body{
+    height: 100%;
+}
+
+div#container{
+    overflow: hidden;
+    
+}
+
+#container .sub-container{
+    display: block;
+    width: 100%;
+}
+
+/*Header*/
+#container div.header {
+    background-image: linear-gradient(to right top, #f16409, #f26709, #f46909, #f56c09, #f66e09);
+    width: 100%;
+    
+}
+/*navbar*/
+ div.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+/*Logo*/
+div#logo{
+    text-transform:uppercase;
+    margin-left:2rem;
+    width: fit-content;
+    color: #0f0401 !important;
+    
+}
+
+div#nav-menu{
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+ }
+
+ div#nav-menu a{
+     margin-left:7rem;
+    display:block;
+    padding: 10px 24px;
+    text-transform:capitalize;
+    font-size:1.2rem;
+    transition: all 0.5s;
+    color:rgb(102, 95, 93);
+    font-family: 'Poppins', sans-serif;
+}
+
+div#nav-menu a:hover{
+    box-shadow: 10px 10px 10px rgb(216, 72, 5);
+    opacity: 1;
+    color:rgb(226, 208, 202);
+}
+
+/*banners*/
+div#curve{
+    background-image: linear-gradient(to right top, #f16409, #f26709, #f46909, #f56c09, #f66e09);
+    width: 100%;
+    height:100%;
+ 
+}
+
+#curve svg{
+    display:block;
+}
+
+/*section*/
+div.section{
+    display:block;
+    width: 100%;
+    height:100%;
+    margin:0 auto;
+    background-image: linear-gradient(to right top, #a7a3a1, #a29e9e, #9d9a9b, #979697, #929292);
+}
+
+div.section .sub-section{
+      display: flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      width: 100%;
+}
+
+.sub-section .img{
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.img img{
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+    display:block;
+}
+
+.sub-section .content{
+    width:100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.content h2{
+    width:100%;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size:2em;
+    display: block;
+    color:#D65210;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content p{
+    width:100%;
+    padding-top:1em;
+    word-spacing: 0.3em;
+    font-size:1.2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: block;
+    color:#6A605A;
+}
+
+/*weblink*/
+
+div.web-link{
+    width:100%;
+    height:100%;
+    margin-top:2rem;
+    background: rgb(184, 181, 181);
+}
+
+.web-link div.wrapper{
+    height:100%;
+    width:100%;
+    display: block;
+    margin: 0 auto;
+   
+}
+
+.wrapper div.contain{
+    width:80%;
+    margin: 0 auto;
+    height:100%;
+}
+
+.contain div.first,
+.contain div.second,
+.contain div.third
+{
+    height:100%;
+    padding:2rem;
+    width:80%;
+    display:block;
+    margin: 0 auto;
+}
+
+.first div.gfg,
+.second div.freecode,
+.third div.tut-point{
+    display:block;
+    width:240px;
+    height:360px;
+    border-radius:15px;
+    background-image: linear-gradient(to right top, #f3240a, #f33a06, #f34a04, #f35704, #f36306);
+}
+
+.gfg img,
+.freecode img,
+.tut-point img{
+    width:90%;
+    height:120px;
+    display: block;
+    object-fit:contain;
+    margin: 0 auto;
+}
+
+.gfg p,
+.freecode p,
+.tut-point p{
+    width:100%;
+    text-align: center;
+    display: block;
+    color: rgba(73, 41, 31, 0.89);
+    text-overflow: none;
+    margin-top:3.5rem;
+}
+
+.gfg button,
+.freecode button,
+.tut-point button{
+    border: none;
+    padding:10px 15px;
+    background-color:#d1c8c7;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    position: relative;
+    top:2.8rem;
+}
+
+.gfg button a,
+.freecode button a,
+.tut-point button a{
+    color:rgb(233, 19, 19);
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+}
+
+div.footer{
+    background-color:#a59794;
+    margin-top:2rem;
+    width:100%;
+    height:100%;
+}
+
+.footer div.wrapper-1{
+    background-image: linear-gradient(to right top, #1c1e1c, #181c19, #151915, #101711, #0b150c);
+}
+
+.wrapper-1 div.items{
+   display:flex;
+   justify-content:space-around;
+   align-items:center;  
+}
+
+.items div.social-media{
+    display:flex;
+    flex-direction:column;
+}
+ 
+div.social-media i.fa{
+    color: #fff;
+    font-size:1rem;
+    padding-top:0.8rem;
+}
+
+
+div.social-media i a{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 1rem;
+}
+
+.items div.menu{
+    display:flex;
+    flex-direction:column;
+}
+
+.items div.menu a{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+@media only screen and  (max-width:768px){
+    
+      /*Nav-menu*/
+div#nav-menu{
+    right:0;
+    display:none;
+ }
+
+ .content h2{
+    width:100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+}
+
+
+
+
+@media only screen and  (min-width:769px) and (max-width:1024px){
+/*Nav-menu*/
+div#nav-menu{
+    margin-left:0;
+    justify-content:space-evenly;
+ }
+ div#nav-menu a{
+    margin-left:0;
+    align-self: center;
+    display: block;
+ }
+
+ .wrapper div.contain{
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+}
+
+
+
+@media only screen and  (min-width:1025px){
+    div#nav-menu{
+        margin-left:19rem;
+     }
+     div#nav-menu{
+        margin-left:0;
+        justify-content:space-evenly;
+     }
+
+     div.section{
+         width:90%;
+        box-shadow: -10px -10px 10px rgb(102, 100, 100);
+     }
+  div.section .sub-section{
+    flex-direction:row-reverse;
+    
+  }
+  .content h2{
+    font-size:4em;
+    text-align:center;
+}
+
+  .content p{
+    word-spacing:0.2em;
+    font-size:2em; 
+  }
+
+  .wrapper div.contain{
+    width:80%;
+    margin: none;
+    display:flex;
+    align-items:center;
+    justify-content:space-betweens;
+  
+}
+
+}
+
+
+
